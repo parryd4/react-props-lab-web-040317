@@ -28,7 +28,7 @@ describe('<Spaceship />', () => {
 
     describe('colors', function () {
       it("should default to `['black', 'red']`", () => {
-        expect(Spaceship.defaultProps.colors).toInclude(['black', 'red']);
+        expect(Spaceship.defaultProps.colors).toEqual(['black', 'red']); // why not toInclude? why toEqual?
       });
 
       it('should render the given colors', () => {
